@@ -1,0 +1,79 @@
+@charset "UTF-8";
+/* CSS Document */
+
+body{margin: 0;}
+.wrapper{display: flex; flex-direction: column; min-height: 100vh;}
+
+/*========= 上部固定させるためのCSS ===============*/
+#header{
+	height: 70px;/*高さ指定*/
+	width: 100%;/*横幅指定*/
+	/*以下はレイアウトのためのCSS*/
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	background:#000a55;
+	color: #fff;
+	text-align: center;
+	padding: 20px;
+}
+
+/*JSを使いfixedクラスが付与された際の設定*/
+#header.fixed{
+	position: fixed;/*fixedを設定して固定*/
+  z-index: 999;/*最前面へ*/
+  top:0;/*位置指定*/
+  left:0;/*位置指定*/
+}
+
+
+/*========= 以下は検証用のレイアウトのためのCSS ===============*/
+nav ul{
+list-style: none;
+display: flex;
+justify-content: center;
+}
+
+nav ul li a{
+text-decoration: none;
+color: #fff;
+padding:10px;
+}
+
+section{
+	padding: 50px 0;
+	font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", serif;
+}
+.wrapper main #box1 {
+    background-image: url(../gallery/hyousi/tora.gif);
+}
+#area-2 p {
+	font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", serif;
+	font-size: 25px
+}
+#area-2 h2 {
+	font-family: YuGothic, "Yu Gothic medium", "Hiragino Sans", Meiryo, sans-serif;
+	font-size: 70px;
+}
+#area-3 h2 {
+	font-family: YuGothic, "Yu Gothic medium", "Hiragino Sans", Meiryo, sans-serif;
+}
+#area-3 p {
+	font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", serif;
+}
+#area-1 p {
+	font-family: YuMincho, "Yu Mincho", "Hiragino Mincho ProN", serif;
+	font-size: 40px;
+}
+#area-1 h2 {
+	font-family: YuGothic, "Yu Gothic medium", "Hiragino Sans", Meiryo, sans-serif;
+	font-size: 70px;
+}
+#footer {
+	text-align: center;
+	background-color: #000a55;
+	color: #FFFFFF;
+	width: 100%;
+	height: 30px;
+	bottom: 0;
+}
